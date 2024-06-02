@@ -5,7 +5,7 @@ def palidromeint(x: int) -> bool:
         #if negative, it is not a palindrome
         return False
     elif x % 10 == 0 and x != 0:
-        #if it ends in 0 and 2 or more digitsm it is not a palindrome
+        #if it ends in 0 and 2 or more digits it is not a palindrome
         return False
     while x > 0:
         r = x % 10
@@ -13,7 +13,8 @@ def palidromeint(x: int) -> bool:
         x = x//10
         if y == og:
             return True
-
+        else:
+            return False
 
 x = 121
 print(palidromeint(x))
